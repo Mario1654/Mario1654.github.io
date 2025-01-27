@@ -1,0 +1,12 @@
+
+.circulo {
+  background-color:#5FE3F3;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 10px solid #FF6CDA;
+position: relative;
+	left:610.5px;
+low:30px;
+	
+}
