@@ -7,7 +7,7 @@
   position: relative; /* Permite centrarlo en el viewport */
   top: -10%; /* Centrado vertical */
   left: 50%; /* Centrado horizontal */
- /* Ajusta el centro exacto */
+  transform: translate(-50%, -50%); /* Ajusta el centro exacto */
 }
 
 /* Diseño responsivo */
