@@ -4,7 +4,7 @@
   height: 300px;
   border-radius: 50%;
   border: 10px solid #FF6CDA;
-  position: absolute; /* Permite centrarlo en el viewport */
+  position: relative; /* Permite centrarlo en el viewport */
   top: 50%; /* Centrado vertical */
   left: 50%; /* Centrado horizontal */
   transform: translate(-50%, -50%); /* Ajusta el centro exacto */
