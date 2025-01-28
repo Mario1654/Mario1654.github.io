@@ -1,7 +1,7 @@
 .circulo {
   background-color: #5FE3F3;
-  width: 45%;
-  height: 41%;
+  width: 25%;
+	height: 20%;
   border-radius: 50%;
   border: 10px solid #FF6CDA;
   position: relative; /* Permite centrarlo en el viewport */
