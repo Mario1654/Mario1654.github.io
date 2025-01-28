@@ -1,3 +1,16 @@
+.circulo {
+  background-color: #5FE3F3;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 10px solid #FF6CDA;
+  position: absolute; /* Permite centrarlo en el viewport */
+  top: 50%; /* Centrado vertical */
+  left: 50%; /* Centrado horizontal */
+  transform: translate(-50%, -50%); /* Ajusta el centro exacto */
+}
+
+/* Diseño responsivo */
 @media (max-width: 768px) {
   .circulo {
     width: 200px; /* Tamaño más pequeño para tabletas */
@@ -12,4 +25,4 @@
     height: 150px;
     border: 6px solid #FF6CDA;
   }
-}
+} 
