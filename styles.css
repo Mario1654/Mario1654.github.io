@@ -1,19 +1,55 @@
-
 .circulo {
-  background-color:#5FE3F3;
+  background-color: #5FE3F3;
   width: 300px;
   height: 300px;
   border-radius: 50%;
   border: 10px solid #FF6CDA;
-position: relative;
-	left:530.5px;
-low:30px;
-	
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* Centra horizontalmente */
+  margin: 20px auto;
 }
-.cuadrado {
+
+.cuadrado,
+.smooth-square {
   width: 200px; /* Ancho del cuadrado */
   height: 200px; /* Altura del cuadrado */
   background: linear-gradient(135deg, #f8bbd0, #c5cae9); /* Gradiente rosa y morado pastel */
   border-radius: 16px; /* Bordes suaves */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* Centra horizontalmente */
+  margin: 20px auto; /* Espaciado automático */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .circulo {
+    width: 200px;
+    height: 200px;
+    border: 8px solid #FF6CDA;
+  }
+
+  .cuadrado,
+  .smooth-square {
+    width: 150px; /* Ajusta el tamaño para pantallas medianas */
+    height: 150px;
+    border-radius: 12px; /* Reduce la curvatura */
+  }
+}
+
+@media (max-width: 480px) {
+  .circulo {
+    width: 150px;
+    height: 150px;
+    border: 6px solid #FF6CDA;
+  }
+
+  .cuadrado,
+  .smooth-square {
+    width: 120px; /* Ajusta aún más para pantallas pequeñas */
+    height: 120px;
+    border-radius: 8px; /* Curvatura más pequeña */
+  }
 }
