@@ -3,28 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel= "stylesheet" href="styles.css">
-
-    <title> VIRA M</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>VIBRA M</title>
     <style>
         body {
             margin: 2px;
             padding: 0;
-            font-family: 'Courier New';
+            font-family: 'Courier New', monospace;
             background: linear-gradient(to right, #ff9aaa, #fdb4bf);
             color: #FFFFFF;
         }
 
         header {
-            background-color:#000000;
-            text-align:center;
-         
-			6M7.9LÑ}{7
-		45}        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            background-color: #000000;
+            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
 
         header h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-family: 'Comic Sans MS', cursive;
             color: #fff;
             text-shadow: 2px 2px 4px #000;
@@ -33,15 +31,16 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color:  #ff0080;
+            background-color: #ff0080;
             padding: 1rem;
+            flex-wrap: wrap;
         }
 
         nav a {
             margin: 0 1rem;
             text-decoration: none;
             color: #fff;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             transition: transform 0.2s;
         }
 
@@ -56,18 +55,16 @@
         }
 
         .products {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
+            justify-items: center;
         }
 
         .product {
-            background: #ff96c5  ;
-            border: 2px solid #;
+            background: #ff96c5;
             border-radius: 10px;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-            width: 200px;
             padding: 1rem;
             text-align: center;
             transition: transform 0.3s;
@@ -89,61 +86,88 @@
             margin-top: 2rem;
             font-size: 1rem;
         }
-    .titulo {
-	font-family: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
-}
-    .titulo {
-	font-family: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
-}
-    .titulo {
-	font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Arial Black, sans-serif;
-}
-    .titulo {
-	font-family: Constantia, Lucida Bright, DejaVu Serif, Georgia, serif;
-}
-    .titulo {
-	font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
-}
+
+        .circulo img {
+            display: block;
+            margin: 1rem auto;
+            border-radius: 50%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+            }
+
+            .main h2 {
+                font-size: 1.2rem;
+            }
+
+            .product {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+
+            .product {
+                width: 100%;
+            }
+        }
     </style>
-	
 </head>
 <body>
-<img src="vista 1.png" width="960" height="640" alt=""/><img src="pixelcut-export.png" alt=""/>
-<header>
-  <h1 class="titulo" align="center"><em>VIBRA M</em></h1>
-</header>
+    <img src="vista 1.png" alt="Imagen principal" style="width: 100%; height: auto;">
+    <header>
+        <h1 class="titulo"><em>VIBRA M</em></h1>
+    </header>
 
-<div class =" circulo"><img src="WhatsApp_Image_2025-01-25_at_6.43.28_PM-removebg-preview.png" width="300" height="300" alt=""/></div>
-	</br>
-<nav>
+    <div class="circulo">
+        <img src="WhatsApp_Image_2025-01-25_at_6.43.28_PM-removebg-preview.png" alt="Círculo" width="200">
+    </div>
+
+    <nav>
         <a href="#">Inicio</a>
         <a href="bolsas.html">Bolsas</a>
         <a href="#">Peluches</a>
         <a href="#">Relojes</a>
         <a href="#">Próximamente</a>
     </nav>
+
     <div class="main">
         <h2>¡Explora nuestros productos con estilo y haz notar tu buena vibra!</h2>
         <div class="products">
-          <div class="product">
-<img src="IMG_20250118_135318481.jpg" width="300" height="300" alt=""/>
-<h3>Bolsa Cafe</h3>
+            <div class="product">
+                <img src="IMG_20250118_135318481.jpg" alt="Bolsa Café">
+                <h3>Bolsa Café</h3>
                 <p>$350</p>
-          </div>
-          <div class="product">
-          <img src="PXL_20250118_124625656.jpg" width="300" height="200" alt=""/>
-<h3>Peluches</h3>
+            </div>
+            <div class="product">
+                <img src="PXL_20250118_124625656.jpg" alt="Peluches">
+                <h3>Peluches</h3>
                 <p>Desde $150 a $270</p>
-          </div>
-          <div class="product">
-    <img src="PXL_20250118_142646357.jpg" width="300" height="300" alt=""/>
-<h3>Relojes Para dama y caballero</h3>
-                <p>Desde $150 a $250</p></div>
+            </div>
+            <div class="product">
+                <img src="PXL_20250118_142646357.jpg" alt="Relojes">
+                <h3>Relojes Para dama y caballero</h3>
+                <p>Desde $150 a $250</p>
+            </div>
         </div>
+    </div>
 
     <footer>
-        <p>© 2025 VIBRA M. ¡Mantén la mejor viba!</p>
-
-    </footer>	
+        <p>© 2025 VIBRA M. ¡Mantén la mejor vibra!</p>
+    </footer>
 </body>
 </html>
