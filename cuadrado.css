@@ -5,7 +5,7 @@
   border-radius: 16px; /* Bordes suaves */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
   position: absolute; /* Permite centrarlo en el viewport */
-  top:-80%; /* Centrado vertical */
+  low:40%; /* Centrado vertical */
   left: 50%; /* Centrado horizontal */
   transform: translate(-50%, -50%); /* Ajusta el centro exacto */
 }
