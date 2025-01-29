@@ -4,7 +4,7 @@
   background: linear-gradient(135deg, #f8bbd0, #c5cae9); /* Gradiente rosa y morado pastel */
   border-radius: 16px; /* Bordes suaves */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  position: absolute; /* Permite centrarlo en el viewport */
+  position: relative; /* Permite centrarlo en el viewport */
   top:50%; /* Centrado vertical */
   left: 50%; /* Centrado horizontal */
   transform: translate(-50%, -50%); /* Ajusta el centro exacto */
