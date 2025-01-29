@@ -34,3 +34,14 @@
             text-align: center;
             transition: transform 0.3s;
         }
+.cuadro {
+  width: 600px; /* Ancho inicial del cuadrado */
+  height: px; /* Altura inicial del cuadrado */
+  background: linear-gradient(135deg, #ff70fb, #c5cae9); /* Gradiente rosa y morado pastel */
+  border-radius: 16px; /* Bordes suaves */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  position: relative; /* Permite centrarlo en el viewport */
+  top:50%; /* Centrado vertical */
+  left: 50%; /* Centrado horizontal */
+  transform: translate(-50%, -50%); /* Ajusta el centro exacto */
+}
